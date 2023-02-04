@@ -54,7 +54,7 @@ Enter your password and install.
 
 ''' wget https://archives.streamsets.com/datacollector/3.22.3/tarball/activation/streamsets-datacollector-common-3.22.3.tgz'''
 
-
+![vmware_KyOKSSfkTq](https://user-images.githubusercontent.com/109401839/216790885-1dc88284-2dd1-4c07-a727-74c9c763fce3.png)
 
 
 
