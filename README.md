@@ -70,4 +70,12 @@ Then use ```ulimit -n``` to verify the change.
 
 Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost interface of data collector. 
 
+![vmware_nefeOlVQU9](https://user-images.githubusercontent.com/109401839/216791163-47d59477-053a-4e9d-ac95-664eec406c4c.png)
+
+> Running on URI : 'http://fnabeel-virtual-machine:18630' , enter the url into your browser and you should be welcomed with; 
+
+![vmware_pqzGMdAWzf](https://user-images.githubusercontent.com/109401839/216791224-8a7e1349-fec7-4b5e-878a-7ac1e2c68450.png)
+
+
+
 
