@@ -48,13 +48,26 @@ These are the instructions for Tarball:
 
 In Linux Terminal I first installed the OpenJDK 8 / Java 8 JDK, either or by using the commands; 
 
-'''sudo apt-get update && sudo apt-get install openjdk-8-jdk'''
+```
+sudo apt-get update && sudo apt-get install openjdk-8-jdk
+```
 
 Enter your password and install. 
 
-''' wget https://archives.streamsets.com/datacollector/3.22.3/tarball/activation/streamsets-datacollector-common-3.22.3.tgz'''
+```
+wget https://archives.streamsets.com/datacollector/3.22.3/tarball/activation/streamsets-datacollector-common-3.22.3.tgz
+```
 
 ![vmware_KyOKSSfkTq](https://user-images.githubusercontent.com/109401839/216790885-1dc88284-2dd1-4c07-a727-74c9c763fce3.png)
 
+
+Use ``` ulimit -n```
+It should respond with 1024 as default, we need atleast 32768 to run Data Collectors. 
+
+``` ulimit -n 32768``` will increase the descriptor limit.
+
+Then use ```ulimit -n``` to verify the change. 
+
+Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost interface of data collector. 
 
 
