@@ -6,7 +6,7 @@
 What is StreamSets Data Collector is a lightweight engine used to stream data in real time. 
 It can be used to route and process data in your data streams.
 
-The purpose of this document is to show a general step by step process of how to setup StreamSets Data Collector and utilise it in Linux via Windows 10 without dual booting or VM software. 
+The purpose of this document is to show a general step by step process of how to setup StreamSets Data Collector and utilise it in Linux via Windows 10 without dual booting. Originally, I planned to use Windows Subsetting Linux (WSL) through Visual Studios Code (VSC). This attempt worked but was time consuming to set up for notation. Perhaps, I will create a seperate repository demonstrating WSL through VSC. 
 
 <h2>Environments and Technologies Used</h2>
 
@@ -32,7 +32,10 @@ The purpose of this document is to show a general step by step process of how to
 
 <b>Set Up</b>
 
-First I downloaded the ISO file of [Ubuntu 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb)
+First I downloaded the ISO file of [Ubuntu 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) and installed it into VM Workspace. 
+
+![vmware_3ngMFZ7NOs](https://user-images.githubusercontent.com/109401839/216786096-2e9d6cc6-6dda-4999-a569-fe61e849730f.png)
+
 
 In Linux, Download the [Data Collector](https://accounts.streamsets.com/install/select/data-collector) for "Linux Server - For Porduction Use" , then selected the Download Type to be "Tarball(Recommended)" 
 
