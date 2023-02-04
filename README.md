@@ -30,7 +30,7 @@ The purpose of this document is to show a general step by step process of how to
 -Manage
 > My Organisation> Users> Groups> Audis> API Credentials
 
-<h3>Set Up</h3>
+<h3>Set Up Phase I</h3>
 
 First I downloaded the ISO file of Ubuntu 22.04.1 LTS and installed it into VM Workstation. 
 
@@ -76,7 +76,7 @@ Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost 
 
 ![vmware_pqzGMdAWzf](https://user-images.githubusercontent.com/109401839/216791224-8a7e1349-fec7-4b5e-878a-7ac1e2c68450.png)
 
-<h3>Configuration</h3>
+<h3>Configuration and Running Pipeline, Phase II</h3>
 
 <b>Now the setup Phase is over and Data collectors is deployed, its time to create a pipeline, configure it and run a sample dataset.<b>
 
@@ -90,4 +90,10 @@ I lay a basic template first or later can be done.
 
 ![Inkedvmware_0Mw3nKfJLZ](https://user-images.githubusercontent.com/109401839/216791724-3edb0fcb-3a42-407e-9376-df18824a3c7d.jpg)
 
+
+ <B>Running the Pipeline<B>
+
+![image](https://user-images.githubusercontent.com/109401839/216793959-7b74cf9d-5c8a-482d-9d58-f22fc76920c7.png)
+
+That completes Phase II.
 
