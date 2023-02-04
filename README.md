@@ -10,12 +10,12 @@ The purpose of this document is to show a general step by step process of how to
 
 <h2>Environments and Technologies Used</h2>
 
-- StreamSets Data Collector 3.22.3
-- VM Workstation
+- [StreamSets Data Collector 3.22.3](https://accounts.streamsets.com/install/select/data-collector)
+- [VM Workstation](https://www.vmware.com/products/workstation-pro.html)
 
 <h2>Operating Systems Used </h2>
 
-- Ubuntu Linux 22.04.1 LTS 
+- [Ubuntu Linux 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) 
 
 <h2>Phases</h2>
 
@@ -32,7 +32,7 @@ The purpose of this document is to show a general step by step process of how to
 
 <b>Set Up</b>
 
-First I downloaded the ISO file of [Ubuntu 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) and installed it into VM Workstation. 
+First I downloaded the ISO file of Ubuntu 22.04.1 LTS and installed it into VM Workstation. 
 
 ![vmware_3ngMFZ7NOs](https://user-images.githubusercontent.com/109401839/216786096-2e9d6cc6-6dda-4999-a569-fe61e849730f.png)
 
@@ -44,3 +44,17 @@ In Linux, Download the [Data Collector](https://accounts.streamsets.com/install/
 These are the instructions for Tarball:
 
 ![vivaldi_93pnGrQIWy](https://user-images.githubusercontent.com/109401839/216780174-79bf2504-b6aa-46c1-91f7-0ae5ae7b1a2a.png)
+
+
+In Linux Terminal I first installed the OpenJDK 8 / Java 8 JDK, either or by using the commands; 
+
+'''sudo apt-get update && sudo apt-get install openjdk-8-jdk'''
+
+Enter your password and install. 
+
+''' wget https://archives.streamsets.com/datacollector/3.22.3/tarball/activation/streamsets-datacollector-common-3.22.3.tgz'''
+
+
+
+
+
