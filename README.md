@@ -90,6 +90,75 @@ I lay a basic template first or later can be done.
 
 ![Inkedvmware_0Mw3nKfJLZ](https://user-images.githubusercontent.com/109401839/216791724-3edb0fcb-3a42-407e-9376-df18824a3c7d.jpg)
 
+![vmware_vr8ciH2dLf](https://user-images.githubusercontent.com/109401839/216794271-0a554548-3606-491b-964b-6392beda1a4a.png)
+
+Next Install Jython in the Package Manager section. 
+
+![Inkedvmware_jpbe4ElCWg](https://user-images.githubusercontent.com/109401839/216794308-eb6d404c-d1d3-4abf-b108-da35c8036a80.jpg)
+
+Go back home and enter the pipeline. 
+
+Under the Jython Evaluator Config, enter the script:
+
+```
+try: 
+  for record in records:
+    cc = record.value['credit_card']
+    if cc == '':
+      error.write(record, "Payment type was CRD, but credit card was null")
+      continue
+
+    cc_type = ''
+    if cc.startswith('4'):
+      cc_type = 'Visa'
+    elif cc.startswith(('51','52','53','54','55')):
+      cc_type = 'MasterCard'
+    elif cc.startswith(('34','37')):
+      cc_type = 'AMEX'
+    elif cc.startswith(('300','301','302','303','304','305','36','38')):
+      cc_type = 'Diners Club'
+    elif cc.startswith(('6011','65')):
+      cc_type = 'Discover'
+    elif cc.startswith(('2131','1800','35')):
+      cc_type = 'JCB'
+    else:
+      cc_type = 'Other'
+
+    record.value['credit_card_type'] = cc_type
+
+    output.write(record)
+except Exception as e:
+  error.write(record, e.message)
+```
+
+Next Convert Types with a Field Type Converter
+
+Under Field Type Converter Configuration Conversions Tab:
+Modify the "Fields to Convert" to ```/dropoff_datetime``` and ```/pickup_datetime```
+Modify "Convert to Type" to  ```DATETIME```
+Modify "Date Format" to ``` yyyy-MM-dd HH:mm:ss```
+
+
+Add a new section by hitting the plus and fill the Fields to Convert with:
+```
+/fare_amount
+/dropoff_latitude
+/dropoff_longitude
+/mta_tax
+/pickup_latitude
+/pickup_longitude
+/surcharge
+/tip_amount
+/tolls_amount
+/total_amount
+```
+
+The Convert to Type to ```Double```
+In the end, the Field Type Converter should look something like this. 
+
+![vmware_vxR0uTJ9QJ](https://user-images.githubusercontent.com/109401839/216794613-b1fed41e-2d29-4aba-9431-e6b6f2f1c76b.png)
+
+
 
  <B>Running the Pipeline<B>
 
