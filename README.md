@@ -80,5 +80,14 @@ Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost 
 
 <b>Now the setup Phase is over and Data collectors is deployed, its time to create a pipeline, configure it and run a sample dataset.<b>
 
+![vmware_0NyxDaoVLR](https://user-images.githubusercontent.com/109401839/216791622-4772eda6-c656-43d3-8a34-496647a75183.png)
+
+I lay a basic template first or later can be done.
+> 0.Directory > 0.Stream Selector > 1. Jython Evaluator > 1.Field Masker > 1.Hadoop FS
+> 2. Expression Evaluator (Connect to Hadoop FS) > 2.Field Type Converter > 2.Expression Evaluator > 2.Trash
+
+ Place Directory 1 on the plane first and enter it's config. 
+
+![Inkedvmware_0Mw3nKfJLZ](https://user-images.githubusercontent.com/109401839/216791724-3edb0fcb-3a42-407e-9376-df18824a3c7d.jpg)
 
 
