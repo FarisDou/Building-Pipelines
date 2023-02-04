@@ -13,7 +13,7 @@ The purpose of this document is to show a general step by step process of how to
 - [StreamSets Data Collector 3.22.3](https://accounts.streamsets.com/install/select/data-collector)
 - [VM Workstation](https://www.vmware.com/products/workstation-pro.html)
 
-<h2>Operating Systems Used </h2>
+<h2>Operating Systems Used</h2>
 
 - [Ubuntu Linux 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) 
 
@@ -30,7 +30,7 @@ The purpose of this document is to show a general step by step process of how to
 -Manage
 > My Organisation> Users> Groups> Audis> API Credentials
 
-<b>Set Up</b>
+<h3>Set Up</h3>
 
 First I downloaded the ISO file of Ubuntu 22.04.1 LTS and installed it into VM Workstation. 
 
@@ -76,6 +76,9 @@ Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost 
 
 ![vmware_pqzGMdAWzf](https://user-images.githubusercontent.com/109401839/216791224-8a7e1349-fec7-4b5e-878a-7ac1e2c68450.png)
 
+<h3>Configuration</h3>
+
+<b>Now the setup Phase is over and Data collectors is deployed, its time to create a pipeline, configure it and run a sample dataset.<b>
 
 
 
