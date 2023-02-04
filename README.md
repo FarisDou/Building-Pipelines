@@ -32,7 +32,7 @@ The purpose of this document is to show a general step by step process of how to
 
 <b>Set Up</b>
 
-First I downloaded the ISO file of [Ubuntu 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) and installed it into VM Workspace. 
+First I downloaded the ISO file of [Ubuntu 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) and installed it into VM Workstation. 
 
 ![vmware_3ngMFZ7NOs](https://user-images.githubusercontent.com/109401839/216786096-2e9d6cc6-6dda-4999-a569-fe61e849730f.png)
 
