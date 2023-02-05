@@ -140,6 +140,10 @@ try:
 except Exception as e:
   error.write(record, e.message)
 ```
+
+<b>Expression Evaluator (1)<b>
+Expression Tab: Field Output | ```/credit_card_type``` | ```n/a```
+
  
 <b> Write to Destination | Local FS<b>
 
@@ -214,10 +218,19 @@ Add Field Expressions:
 ```/trip_revenue``` | ```${record:value('/total_amount') - record:value('/tip_amount')}```
 >This expression subtracts the tip from the total fare.
 
- <B>Running the Pipeline<B>
+ <B>Running the Pipeline (Failed)<B>
 
 ![vmware_hVnfrnRTFU](https://user-images.githubusercontent.com/109401839/216796157-7e3abc2a-3546-4afd-9975-273ebebb15e3.png)
 
+<b>Running the Pipeline(Incomplete)<b>
+ 
+![vmware_o5RdTuOiWp](https://user-images.githubusercontent.com/109401839/216836112-e4050be8-2609-4cee-aea3-338a14ff50f2.png)
+
+<B>Running the Pipeline(Sucessfully)<b>
+
+ ![AoS9GLCsEq](https://user-images.githubusercontent.com/109401839/216836067-12fa9331-0305-4ab8-a3ab-8275d8ccd083.png)
 
 That completes Phase II.
 
+>Note to self, check directories and ensure everystep is taken or somethings that seem minor will cause the entirety of the pipeline to fail.
+>I found it strange that in some pipelines there was no output and a few errors and others there was no errors, no output. This final screenshot seems like a success, because the pipeline is doing its job. An automated process that moves data from one place to another, transforming and processing it along the way. The final screenshot to me shows theres a process happening. 
