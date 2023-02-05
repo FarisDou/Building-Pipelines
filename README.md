@@ -92,6 +92,14 @@ I lay a basic template first or later can be done.
 
 ![vmware_vr8ciH2dLf](https://user-images.githubusercontent.com/109401839/216794271-0a554548-3606-491b-964b-6392beda1a4a.png)
 
+Next Stream Selector Configurations, Conditions Tab
+
+Add the conditions ```${record:value('/payment_type') == 'CRD'}```
+
+It should look something like this:
+
+![vmware_AmBLARQWOI](https://user-images.githubusercontent.com/109401839/216795197-e2b2c524-33b7-4414-b8c8-9d8cff04fafc.png)
+
 Next Install Jython in the Package Manager section. 
 
 ![Inkedvmware_jpbe4ElCWg](https://user-images.githubusercontent.com/109401839/216794308-eb6d404c-d1d3-4abf-b108-da35c8036a80.jpg)
@@ -158,7 +166,22 @@ In the end, the Field Type Converter should look something like this.
 
 ![vmware_vxR0uTJ9QJ](https://user-images.githubusercontent.com/109401839/216794613-b1fed41e-2d29-4aba-9431-e6b6f2f1c76b.png)
 
+<B>Data Maniuplation<B>
 
+Under Expression Evaluator (1) Configuration , Expressions Tab
+
+The Field Expressions Output field:
+
+```/pickup_location``` | ```	${record:value('/pickup_latitude')}, ${record:value('/pickup_longitude')}```
+
+Add Field Expressions:
+
+```/dropoff_location``` | ```	${record:value('/dropoff_latitude')}, ${record:value('/dropoff_longitude')}```
+
+Add Field Expressions:
+
+```/trip_revenue``` | ```${record:value('/total_amount') - record:value('/tip_amount')}```
+>This expression subtracts the tip from the total fare.
 
  <B>Running the Pipeline<B>
 
