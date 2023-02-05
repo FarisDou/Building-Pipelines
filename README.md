@@ -218,15 +218,15 @@ Add Field Expressions:
 ```/trip_revenue``` | ```${record:value('/total_amount') - record:value('/tip_amount')}```
 >This expression subtracts the tip from the total fare.
 
- <B>Running the Pipeline (Failed)<B>
+ <B>Running the Pipeline (Failed)<B> 4 hours
 
 ![vmware_hVnfrnRTFU](https://user-images.githubusercontent.com/109401839/216796157-7e3abc2a-3546-4afd-9975-273ebebb15e3.png)
 
-<b>Running the Pipeline(Incomplete)<b>
+<b>Running the Pipeline(Incomplete)<b> 2 Hours
  
 ![vmware_o5RdTuOiWp](https://user-images.githubusercontent.com/109401839/216836112-e4050be8-2609-4cee-aea3-338a14ff50f2.png)
 
-<B>Running the Pipeline(Sucessfully)<b>
+<B>Running the Pipeline(Sucessfully)<b> 1 hour
 
  ![AoS9GLCsEq](https://user-images.githubusercontent.com/109401839/216836067-12fa9331-0305-4ab8-a3ab-8275d8ccd083.png)
 
