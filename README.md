@@ -138,6 +138,19 @@ try:
 except Exception as e:
   error.write(record, e.message)
 ```
+ 
+<b> Write to Destination | Local FS<b>
+
+Output Files Tab:
+
+![vivaldi_FHJIDE910g](https://user-images.githubusercontent.com/109401839/216795711-36764a03-9513-4f61-aa65-ad55f36d0169.png)
+
+Data Format Tab:
+
+![vivaldi_O0E1aQfxzp](https://user-images.githubusercontent.com/109401839/216795728-2a28397a-d6dd-4932-a061-2708c356678c.png)
+
+That completes the main branch of the pipeline.
+
 <b>Mask Credit Card Numbers Through Field Masker<b>
 For the credit card numbers, we'll use the following regular expression to mask all but the last four digits: ```(.*)([0-9]{4})```
 
@@ -200,6 +213,8 @@ Add Field Expressions:
 >This expression subtracts the tip from the total fare.
 
  <B>Running the Pipeline<B>
+
+![vmware_hVnfrnRTFU](https://user-images.githubusercontent.com/109401839/216796157-7e3abc2a-3546-4afd-9975-273ebebb15e3.png)
 
 
 That completes Phase II.
