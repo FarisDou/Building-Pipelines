@@ -219,8 +219,3 @@ Add Field Expressions:
 
 That completes Phase II.
 
-###
-[Reference #1](https://docs.streamsets.com/portal/datacollector/3.22.x/help/datacollector/UserGuide/Tutorial/BasicTutorial.html#concept_phf_cjt_ls)
-[Reference #2](https://docs.streamsets.com/portal/datacollector/3.22.x/help/datacollector/UserGuide/Tutorial/ExtendedTutorial.html#concept_w4n_gjt_ls)
-[Glossary](https://docs.streamsets.com/portal/datacollector/3.22.x/help/datacollector/UserGuide/Glossary/Glossary_title.html#concept_xbx_rs1_tq)
-###
