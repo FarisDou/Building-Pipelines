@@ -68,6 +68,8 @@ It should respond with 1024 as default, we need atleast 32768 to run Data Collec
 
 Then use ```ulimit -n``` to verify the change. 
 
+Next, ```cd streamsets-datacollector-3.22.3```
+
 Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost interface of data collector. 
 
 ![vmware_nefeOlVQU9](https://user-images.githubusercontent.com/109401839/216791163-47d59477-053a-4e9d-ac95-664eec406c4c.png)
