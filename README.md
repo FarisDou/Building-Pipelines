@@ -138,8 +138,24 @@ try:
 except Exception as e:
   error.write(record, e.message)
 ```
+<b>Mask Credit Card Numbers Through Field Masker<b>
+For the credit card numbers, we'll use the following regular expression to mask all but the last four digits: ```(.*)([0-9]{4})```
 
-Next Convert Types with a Field Type Converter
+Field Masker Configuration, Mask Tab
+
+Fields to Mask: ```/credit_card.```
+
+Mask Type: ```Regular Expression```
+
+Regular Expression: ```(.*)([0-9]{4})```
+
+Groups to Show: ```2```
+
+It should look like this:
+
+![vmware_4n92MXEwxJ](https://user-images.githubusercontent.com/109401839/216795404-3c6cfe65-4a5c-4741-ba1d-efb1d2b69f97.png)
+
+<b>Next Convert Types with a Field Type Converter<b>
 
 Under Field Type Converter Configuration Conversions Tab:
 Modify the "Fields to Convert" to ```/dropoff_datetime``` and ```/pickup_datetime```
@@ -168,7 +184,7 @@ In the end, the Field Type Converter should look something like this.
 
 <B>Data Maniuplation<B>
 
-Under Expression Evaluator (1) Configuration , Expressions Tab
+Under Expression Evaluator (2) Configuration , Expressions Tab
 
 The Field Expressions Output field:
 
