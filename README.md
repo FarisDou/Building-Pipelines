@@ -13,6 +13,10 @@ The purpose of this document is to show a general step by step process of how to
 - [StreamSets Data Collector 3.22.3](https://accounts.streamsets.com/install/select/data-collector)
 - [VM Workstation](https://www.vmware.com/products/workstation-pro.html)
 
+<h2>Dataset</h2>
+
+- [NYC Taxi Data](https://docs.streamsets.com/datacollector/sample_data/tutorial/nyc_taxi_data.csv)
+
 <h2>Operating Systems Used</h2>
 
 - [Ubuntu Linux 22.04.1 LTS](https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=en-gb&gl=gb) 
