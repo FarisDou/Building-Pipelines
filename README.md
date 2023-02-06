@@ -1,6 +1,9 @@
 ![image](https://user-images.githubusercontent.com/109401839/216487677-14f36f8b-0aba-4ae5-80bb-24cc92f9a75f.png)
 
 
+[Video Implementation](https://www.youtube.com/watch?v=kqVJjWjjOyc&ab_channel=FarisNabeel)
+
+
 <h1>Building a Data Pipeline in Windows 10</h1>
 
 What is StreamSets Data Collector is a lightweight engine used to stream data in real time. 
