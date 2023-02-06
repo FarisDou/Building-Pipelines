@@ -162,6 +162,7 @@ Data Format Tab:
 That completes the main branch of the pipeline.
 
 <b>Mask Credit Card Numbers Through Field Masker<b>
+
 For the credit card numbers, we'll use the following regular expression to mask all but the last four digits: ```(.*)([0-9]{4})```
 
 Field Masker Configuration, Mask Tab
@@ -205,7 +206,7 @@ In the end, the Field Type Converter should look something like this.
 
 ![vmware_vxR0uTJ9QJ](https://user-images.githubusercontent.com/109401839/216794613-b1fed41e-2d29-4aba-9431-e6b6f2f1c76b.png)
 
-<B>Data Maniuplation<B>
+<h3>Data Maniuplation<h3>
 
 Under Expression Evaluator (2) Configuration , Expressions Tab
 
@@ -238,3 +239,5 @@ That completes Phase II.
 
 >Note to self, check directories and ensure everystep is taken or somethings that seem minor will cause the entirety of the pipeline to fail.
 >I found it strange that in some pipelines there was no output and a few errors and others there was no errors, no output. This final screenshot seems like a success, because the pipeline is doing its job. An automated process that moves data from one place to another, transforming and processing it along the way. The final screenshot to me shows theres a process happening. 
+
+> If running a previous pipeline or stopped a current one, to reinitiate it proper, use the "reset origin & start option".
