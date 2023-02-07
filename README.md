@@ -244,6 +244,8 @@ So, the pipeline is incorrect due to the stream selector order of pipeline flow,
 
  <b>Running the Pipeline(Sucessful)</b> 15 minutes.
 
+ ![EntyCHChHT](https://user-images.githubusercontent.com/109401839/217294875-cad46a55-c57b-467a-b081-b6fb67a0e361.png)
+
 
 >Note to self, check directories and ensure everystep is taken or somethings that seem minor will cause the entirety of the pipeline to fail.
 >I found it strange that in some pipelines there was no output and a few errors and others there was no errors, no output. This final screenshot seems like a success, because the pipeline is doing its job. An automated process that moves data from one place to another, transforming and processing it along the way. The final screenshot to me shows theres a process happening. 
