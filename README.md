@@ -69,7 +69,7 @@ wget https://archives.streamsets.com/datacollector/3.22.3/tarball/activation/str
 
 
 Use ``` ulimit -n```
-It should respond with 1024 as default, we need atleast 32768 to run Data Collectors. 
+It should respond with 1024 as default, we need atleast 32768 to run Data Collectors. The ulimit increases the amount of files the user can create which is needed for data collector. 
 
 ``` ulimit -n 32768``` will increase the descriptor limit.
 
@@ -104,6 +104,8 @@ I lay a basic template first or later can be done.
 Next Stream Selector Configurations, Conditions Tab
 
 Add the conditions ```${record:value('/payment_type') == 'CRD'}```
+
+Be sure to havbe pathway 1 go to the jython, and pathway 2 to the other way.
 
 It should look something like this:
 
