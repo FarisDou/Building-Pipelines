@@ -65,7 +65,7 @@ Enter your password and install.
 wget https://archives.streamsets.com/datacollector/3.22.3/tarball/activation/streamsets-datacollector-common-3.22.3.tgz
 ```
 
-![vmware_KyOKSSfkTq](https://user-images.githubusercontent.com/109401839/216790885-1dc88284-2dd1-4c07-a727-74c9c763fce3.png)
+
 
 
 Use ``` ulimit -n```
@@ -79,11 +79,11 @@ Next, ```cd streamsets-datacollector-3.22.3```
 
 Afterwards, ```bin/streamsets dc``` is used to allow us to access the localhost interface of data collector. 
 
-![vmware_nefeOlVQU9](https://user-images.githubusercontent.com/109401839/216791163-47d59477-053a-4e9d-ac95-664eec406c4c.png)
 
-> Running on URI : 'http://fnabeel-virtual-machine:18630' , enter the url into your browser and you should be welcomed with; 
 
-![vmware_pqzGMdAWzf](https://user-images.githubusercontent.com/109401839/216791224-8a7e1349-fec7-4b5e-878a-7ac1e2c68450.png)
+> Running on URI : 'http://"user"-virtual-machine:18630' , enter the url into your browser and you should be welcomed with; 
+
+
 
 <h3>Configuration and Running Pipeline, Phase II</h3>
 
@@ -109,11 +109,11 @@ Be sure to havbe pathway 1 go to the jython, and pathway 2 to the other way.
 
 It should look something like this:
 
-![vmware_AmBLARQWOI](https://user-images.githubusercontent.com/109401839/216795197-e2b2c524-33b7-4414-b8c8-9d8cff04fafc.png)
+
 
 Next Install Jython in the Package Manager section. 
 
-![Inkedvmware_jpbe4ElCWg](https://user-images.githubusercontent.com/109401839/216794308-eb6d404c-d1d3-4abf-b108-da35c8036a80.jpg)
+
 
 Go back home and enter the pipeline. 
 
@@ -182,7 +182,7 @@ Groups to Show: ```2```
 
 It should look like this:
 
-![vmware_4n92MXEwxJ](https://user-images.githubusercontent.com/109401839/216795404-3c6cfe65-4a5c-4741-ba1d-efb1d2b69f97.png)
+
 
 <b>Next Convert Types with a Field Type Converter<b>
 
@@ -209,7 +209,7 @@ Add a new section by hitting the plus and fill the Fields to Convert with:
 The Convert to Type to ```Double```
 In the end, the Field Type Converter should look something like this. 
 
-![vmware_vxR0uTJ9QJ](https://user-images.githubusercontent.com/109401839/216794613-b1fed41e-2d29-4aba-9431-e6b6f2f1c76b.png)
+
 
 <h3>Data Maniuplation<h3>
 
@@ -228,19 +228,6 @@ Add Field Expressions:
 ```/trip_revenue``` | ```${record:value('/total_amount') - record:value('/tip_amount')}```
 >This expression subtracts the tip from the total fare.
 
- <B>Running the Pipeline (Failed)<B> 4 hours
-
-![vmware_hVnfrnRTFU](https://user-images.githubusercontent.com/109401839/216796157-7e3abc2a-3546-4afd-9975-273ebebb15e3.png)
-
-<b>Running the Pipeline(Incomplete)<b> 2 Hours
- 
-![vmware_o5RdTuOiWp](https://user-images.githubusercontent.com/109401839/216836112-e4050be8-2609-4cee-aea3-338a14ff50f2.png)
-
-<B>Running the Pipeline(Near Success)<b> 1 hour
-
- ![AoS9GLCsEq](https://user-images.githubusercontent.com/109401839/216836067-12fa9331-0305-4ab8-a3ab-8275d8ccd083.png)
-
-So, the pipeline is incorrect due to the stream selector order of pipeline flow, it is reversed. 
 
  <b>Running the Pipeline(Sucessful)</b> 15 minutes.
 
